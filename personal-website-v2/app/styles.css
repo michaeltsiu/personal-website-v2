@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-family: "Mulish", Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* GRID START */
+.Navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99;
+}
+
+.Main {
+  background-color: white;
+  height: 100vh;
+}
+
+/* GRID END */
+
+/* ETC START */
+
+.error {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.fontSmall {
+  font-size: 1em;
+}
+
+.fontMedium {
+  font-size: 1.25em;
+}
+
+.fontLarge {
+  font-size: 1.5em;
+}
+
+.header {
+  margin-top: 5vh;
+  height: 10vh;
+  padding: 2.5vh;
+  font-weight: 700;
+  text-align: center;
+}
+
+.icons {
+  margin-top: 5vh;
+}
+
+.icons a{
+  list-style: none;
+  color: #888888;
+  text-decoration: none;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.icons a:hover{
+  color: rgb(80, 80, 80);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.signature {
+  font-family: "Herr Von Muellerhoff", Arial, sans-serif;;
+  margin-top: 3vh;
+}
+
+/* ETC END */
+
+/* NAVBAR START */
+.navbar-container {
+  text-align: center !important;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  float: left;
+  color: white;
+}
+
+.navbar-profile {
+  margin-top: 1vh;
+  margin-bottom: 4vh;
+}
+
+.navbar-picture {
+  background-image: url("./assets/ProfilePicture.JPG");
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  height: 110px;
+  width: 110px;
+}
+
+.navbar-profileName span{
+  font-weight: 700;
+  color: black;
+}
+
+.navbar-profileTitle span{
+  color: black;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.navbar-item {
+  margin: 0.7em 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 2vw;
+}
+
+.navlink-li {
+  font-weight: bold;
+  color: #fff;
+}
+
+.navlink-profile {
+  text-decoration: none;
+}
+
+.navlink-active {
+  color: black;
+  --color: #fff;
+  background-image: linear-gradient(var(--color) 0%, var(--color) 100%);
+  background-repeat: repeat-x;
+  background-position: 0 1.1em;
+  background-size: 2px 2px;
+}
+
+a.navlink-li {
+  position: relative;
+  text-decoration: none;
+}
+
+a.navlink-li:hover {
+  color: gray;
+}
+
+/* NAVBAR END */
+
+/* HOME START */
+.home-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.home-picture {
+  background-color: beige;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+}
+
+.home-picture1 {
+  background-image: url(./assets/ProfilePicture.JPG);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  width: 50vw;
+}
+
+.home-picture2 {
+  width: 50vw;
+  background-image: url(./assets/MainImage.png);
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-text {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.home-title {
+  color: #a7a7a7;
+  font-weight: 400;
+}
+
+.home-header {
+  margin-top: 1.5vh;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.home-body {
+  color: #a7a7a7;
+  margin-top: 2.5vh;
+  text-align: left;
+}
+
+/* HOME END */
+
+/* TECH START */
+
+.tech-list {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tech-cat {
+  border-bottom: 2px solid black;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+.tech-item {
+  justify-content: center;
+  text-align: center;
+  list-style-type: none;
+}
+
+.tech-item li{
+  margin-bottom: 2vh;
+}
+
+.tech-item li a{
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* TECH END */
+
+/* RESUME START */
+
+.resume-container {
+  height: 85vh;
+  margin-bottom: 5vh;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  text-align: center;
+}
+
+.resume-img {
+  opacity: 1;
+  box-shadow: 2px 5px 10px 0px #d2cdc5;
+  max-height: 85%;
+  max-width: 100%;
+  transition: box-shadow 0.3s;
+}
+
+.resume-img:hover {
+  opacity: 1;
+  box-shadow: 4px 10px 20px 0px #d2cdc5;
+  max-height: 87%;
+  max-width: 100%;
+}
+/* RESUME END */
+
+/* CONTACT START */
+
+.contact-main {
+  color: #a7a7a7;
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  justify-content: center;
+  margin-bottom: 55vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-email {
+  border-bottom: dotted 2px black !important;
+  color: inherit;
+  margin-top: 2vh;
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+/* CONTACT END */
+
+/* PORTFOLIO START */
+.portfolio-active {
+  border-bottom: .15em solid black !important;
+}
+
+.portfolio-title {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.portfolio-title li:hover {
+  border-bottom: .15em solid black !important;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.portfolio-body {
+  margin-top: 2.5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 2.5vh;
+  height: 75vh;
+  border: 2px solid black;
+  opacity: 1;
+  box-shadow: 2px 5px 10px 0px #d2cdc5;
+}
+
+.portfolio-cat {
+  margin: 3vh 2vw 2vh 2vw;
+}
+
+.portfolio-main {
+  margin-top: 1vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.portfolio-video {
+  width: 100%;
+  height: 100%;
+  display: table;
+  text-align: center;
+}
+
+.portfolio-video video {
+  width: 75%;
+  height: auto;
+  max-width: 75vw;
+}
+
+.portfolio-video img {
+  width: 50%;
+  height: auto;
+  max-width: 75vw;
+}
+
+.portfolio-tech {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.portfolio-tech div a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.portfolio-summary {
+  margin-top: 4vh;
+  color: #a7a7a7;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  text-align-last: left;
+}
+
+.portfolio-icon a{
+  color: #888888;
+  margin-left: 2vw;
+}
+
+.portfolio-icon a:hover{
+  color: rgb(80, 80, 80);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+/* PORTFOLIO END */
+
+.navbar-burger {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  /* home */
+  .home-text {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+  }
+  /* portfolio */
+  .portfolio-body {
+    /* width: 100vw; */
+    border: none;
+    box-shadow: none;
+  }
+  .portfolio-video video {
+    width: 90%;
+    height: auto;
+    max-width: 90vw;
+  }
+  .portfolio-video img {
+    width: 65%;
+    height: auto;
+    max-width: 70vw;
+  }
+  .fontSmall {
+    font-size: 1em;
+  }
+  .fontMedium {
+    font-size: 1.15em;
+  }
+  .fontLarge {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Navbar {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: flex;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    margin-top: 20vh;
+    justify-content: center;
+    text-align: center;
+    float: none;
+  }
+
+  .home-picture {
+    display: none;
+  }
+  .home-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .home-burger {
+    display: flex;
+  }
+  .fontSmall {
+    font-size: .9em;
+  }
+  .fontMedium {
+    font-size: 1em;
+  }
+  .fontLarge {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .home-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-title {
+    font-size: .8em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .portfolio-tech {
+    font-size: .7em;
+  }
+  .portfolio-tech div span {
+    display: block;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .header {
+    margin-top: 10vh;
+  }
+}
