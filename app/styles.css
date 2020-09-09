@@ -14,20 +14,17 @@ body {
 }
 
 /* GRID START */
-.Navbar {
-  background-color: #333;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 99;
+.Container {
+  background-color: white;
 }
 
 .Main {
-  background-color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 40vw;
+  margin: 0 auto;
 }
 
 .Main div {
@@ -36,7 +33,6 @@ body {
 /* GRID END */
 
 /* ETC START */
-
 .error {
   display: flex;
   justify-content: center;
@@ -84,12 +80,29 @@ body {
   font-family: "Herr Von Muellerhoff", Arial, sans-serif;;
   margin-top: 3vh;
 }
-
 /* ETC END */
 
 /* NAVBAR START */
+.navbar-burger {
+  display: none;
+}
+
 .navbar-container {
-  text-align: center !important;
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 99;
+}
+
+.navbar-item {
+  margin: 0.7em 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 2vw;
 }
 
 .navbar-list {
@@ -103,17 +116,6 @@ body {
   margin-bottom: 4vh;
 }
 
-.navbar-picture {
-  background-image: url("./assets/ProfilePicture.JPG");
-  background-size: cover;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  height: 110px;
-  width: 110px;
-}
-
 .navbar-profileName span{
   font-weight: 700;
   color: black;
@@ -125,24 +127,6 @@ body {
   font-style: italic;
 }
 
-.navbar-item {
-  margin: 0.7em 0;
-  padding: 0;
-  list-style: none;
-  font-weight: 600;
-  color: #fff;
-  margin-right: 2vw;
-}
-
-.navlink-li {
-  font-weight: bold;
-  color: #fff;
-}
-
-.navlink-profile {
-  text-decoration: none;
-}
-
 .navlink-active {
   color: black;
   --color: #fff;
@@ -150,6 +134,11 @@ body {
   background-repeat: repeat-x;
   background-position: 0 1.1em;
   background-size: 2px 2px;
+}
+
+.navlink-li {
+  font-weight: bold;
+  color: #fff;
 }
 
 a.navlink-li {
@@ -161,37 +150,28 @@ a.navlink-li:hover {
   color: gray;
 }
 
+.navlink-profile {
+  text-decoration: none;
+}
 /* NAVBAR END */
 
 /* HOME START */
 .home-main {
   display: flex;
   justify-content: center;
-  margin-top: 15vh;
+  /* margin-top: 15vh; */
+  height: 100vh;
 }
 
 .home-picture {
-  background-color: beige;
-  background-position: top;
+  background-image: url("./assets/ProfilePicture.JPG");
   background-size: cover;
-  height: 100vh;
-  width: 50vw;
-}
-
-.home-picture1 {
-  background-image: url(./assets/ProfilePicture.JPG);
-  background-position: top;
-  background-size: cover;
-  height: 100vh;
-  width: 50vw;
-}
-
-.home-picture2 {
-  width: 50vw;
-  background-image: url(./assets/MainImage.png);
-  background-position: top;
-  background-size: cover;
-  height: 100vh;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  height: 110px;
+  width: 110px;
 }
 
 .home-text {
@@ -217,11 +197,9 @@ a.navlink-li:hover {
   margin-top: 2.5vh;
   text-align: left;
 }
-
 /* HOME END */
 
 /* TECH START */
-
 .tech-list {
   margin-left: 15vw;
   margin-right: 15vw;
@@ -250,23 +228,17 @@ a.navlink-li:hover {
   text-decoration: none;
   color: inherit;
 }
-
 /* TECH END */
 
 /* RESUME START */
-
 .resume-container {
   height: 85vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  text-align: center;
 }
 
 .resume-img {
   opacity: 1;
-  box-shadow: 2px 5px 10px 0px #d2cdc5;
+  box-shadow: 3px 5px 10px 0px #d2cdc5;
   max-height: 85%;
-  max-width: 100%;
   transition: box-shadow 0.3s;
 }
 
@@ -274,12 +246,10 @@ a.navlink-li:hover {
   opacity: 1;
   box-shadow: 4px 10px 20px 0px #d2cdc5;
   max-height: 87%;
-  max-width: 100%;
 }
 /* RESUME END */
 
 /* CONTACT START */
-
 .contact-main {
   color: #a7a7a7;
   display: flex;
@@ -288,7 +258,6 @@ a.navlink-li:hover {
   text-align: center;
   text-decoration: none;
 }
-
 /* CONTACT END */
 
 /* PORTFOLIO START */
@@ -300,8 +269,6 @@ a.navlink-li:hover {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  margin-left: 20vw;
-  margin-right: 20vw;
 }
 
 .portfolio-title li:hover {
@@ -341,7 +308,7 @@ a.navlink-li:hover {
 }
 
 .portfolio-video img {
-  width: 50%;
+  width: 150%;
   height: auto;
   max-width: 75vw;
 }
@@ -377,13 +344,9 @@ a.navlink-li:hover {
   color: rgb(80, 80, 80);
   transition: all 0.2s ease-in-out 0s;
 }
-
 /* PORTFOLIO END */
 
-.navbar-burger {
-  display: none;
-}
-
+/* MEDIA */
 @media screen and (max-width: 1080px) {
   /* home */
   .home-text {
@@ -421,7 +384,7 @@ a.navlink-li:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .Navbar {
+  .navbar-container {
     display: none;
   }
 
@@ -441,9 +404,6 @@ a.navlink-li:hover {
     margin-top: 0;
   }
 
-  .home-picture {
-    display: none;
-  }
   .home-text {
     display: flex;
     justify-content: center;
@@ -452,9 +412,6 @@ a.navlink-li:hover {
     margin-top: 15vh;
     margin-left: 10vw;
     margin-right: 10vw;
-  }
-  .home-burger {
-    display: flex;
   }
   .fontSmall {
     font-size: .9em;

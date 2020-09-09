@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="home-main">
       <div className="home-text">
-        <span className=" home-burger navbar-picture"></span>
+        <span className="home-picture"></span>
         <br/>
         <span className="home-title fontMedium">Hello! I'm</span>
         <div className="home-header fontLarge">Michael Siu <span style={{ color: 'rgb(235, 198, 104)' }}>A Software Engineer.</span></div>

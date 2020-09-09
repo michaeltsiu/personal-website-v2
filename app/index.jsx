@@ -30,18 +30,16 @@ class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="grid-container">
-            <div className="Navbar">
-              <Navbar />
-            </div>
-            <div className="Main">
-              <div><Burger /></div>
-              <div><Home /></div>
-              <div><Portfolio /></div>
-              <div><Resume /></div>
-              <div><TechnicalSkills /></div>
-              <div><Contact /></div>
-            </div>
+        <div className="Container">
+          <Navbar />
+          <div className="Main">
+            <div><Burger /></div>
+            <div><Home /></div>
+            <div><Portfolio /></div>
+            <div><Resume /></div>
+            <div><TechnicalSkills /></div>
+            <div><Contact /></div>
+          </div>
         </div>
       </React.Fragment>
     )
