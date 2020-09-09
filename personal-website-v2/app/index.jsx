@@ -31,24 +31,17 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <div className="grid-container">
-          <Router>
             <div className="Navbar">
               <Navbar />
             </div>
             <div className="Main">
-              <Burger />
-              <React.Suspense fallback={<Loading />}>
-                <Switch>
-                  <Route exact path='/' component={Home} />
-                  <Route exact path='/portfolio' component={Portfolio} />
-                  <Route exact path='/resume' component={Resume} />
-                  <Route exact path='/technical-skills' component={TechnicalSkills} />
-                  <Route exact path='/contact' component={Contact} />
-                  <Route render={() => <h1 className="error fontMedium">Error: 404! Page not found. 😰</h1>} />
-                </Switch>
-              </React.Suspense>
+              <div><Burger /></div>
+              <div><Home /></div>
+              <div><Portfolio /></div>
+              <div><Resume /></div>
+              <div><TechnicalSkills /></div>
+              <div><Contact /></div>
             </div>
-          </Router>
         </div>
       </React.Fragment>
     )

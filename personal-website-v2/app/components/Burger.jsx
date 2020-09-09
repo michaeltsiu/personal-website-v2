@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledBurger = styled.div`
@@ -7,7 +6,7 @@ const StyledBurger = styled.div`
   height: 2rem;
   position: fixed;
   top: 15px;
-  left: 20px;
+  right: 20px;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
@@ -26,7 +25,7 @@ const StyledBurger = styled.div`
     }
 
     &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(-100%)' : 'translateX(0)'};
+      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
       opacity: ${({ open }) => open ? 0 : 1};
     }
 
@@ -40,7 +39,7 @@ const StyleList = styled.div`
   flex-flow: column nowrap;
   background-color: #0D2538;
   position: fixed;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+  transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(200%)'};
   top: 0;
   left: 0;
   height: 100vh;
@@ -63,49 +62,19 @@ const Burger = () => {
       <StyleList open={open}>
         <div className="navbar-list">
           <div className="navbar-item" onClick={() => setOpen(!open)}>
-            <NavLink
-              to='/'
-              exact
-              activeClassName="navlink-active"
-              className="navlink-li">
               Home
-            </NavLink>
           </div>
           <div className="navbar-item" onClick={() => setOpen(!open)}>
-            <NavLink
-              to='/portfolio'
-              exact
-              activeClassName="navlink-active"
-              className="navlink-li">
               Portfolio
-            </NavLink>
           </div>
           <div className="navbar-item" onClick={() => setOpen(!open)}>
-            <NavLink
-              to='/resume'
-              exact
-              activeClassName="navlink-active"
-              className="navlink-li">
               Resume
-            </NavLink>
           </div>
           <div className="navbar-item" onClick={() => setOpen(!open)}>
-            <NavLink
-              to='/technical-skills'
-              exact
-              activeClassName="navlink-active"
-              className="navlink-li">
               Technical Skills
-            </NavLink>
           </div>
           <div className="navbar-item" onClick={() => setOpen(!open)}>
-            <NavLink
-              to='/contact'
-              exact
-              activeClassName="navlink-active"
-              className="navlink-li">
               Contact
-            </NavLink>
           </div>
         </div>
       </StyleList>
