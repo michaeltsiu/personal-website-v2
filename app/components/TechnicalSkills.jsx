@@ -8,10 +8,12 @@ import html5 from '@iconify/icons-logos/html-5';
 import css3 from '@iconify/icons-logos/css-3';
 import bootstrapIcon from '@iconify/icons-logos/bootstrap';
 
-import nodejsIcon from '@iconify/icons-logos/nodejs';
+import nodejsIcon from '@iconify/icons-logos/nodejs-icon';
 import expressIcon from '@iconify/icons-logos/express';
-import mongodbIcon from '@iconify/icons-logos/mongodb';
+import fileTypeMongo from '@iconify/icons-vscode-icons/file-type-mongo';
 import mysqlIcon from '@iconify/icons-logos/mysql';
+
+import fileTypeMysql from '@iconify/icons-vscode-icons/file-type-mysql';
 import postgresqlIcon from '@iconify/icons-logos/postgresql';
 import fileTypeNginx from '@iconify/icons-vscode-icons/file-type-nginx';
 
@@ -25,7 +27,9 @@ import loaderIcon from '@iconify/icons-logos/loader';
 export default function TechnicalSkills() {
   return (
     <div>
-      <div className="header fontLarge"> 03. Technical Skills</div>
+      <div className="header fontLarge">
+        <span className="highlight">03.</span> Technical Skills
+      </div>
       <div className="tech-list">
         <div>
           <h1 className="tech-cat fontMedium">Front-End</h1>
@@ -80,19 +84,19 @@ export default function TechnicalSkills() {
             </li>
             <li>
               <a href="https://expressjs.com/" target="_blank">
-                <div><Icon icon={expressIcon} /></div>
+                <div><Icon icon={expressIcon} color='white'/></div>
                 Express
               </a>
             </li>
             <li>
               <a href="https://www.mongodb.com/" target="_blank">
-                <div><Icon icon={mongodbIcon} /></div>
+                <div><Icon icon={fileTypeMongo} /></div>
                 MongoDB
               </a>
             </li>
             <li>
               <a href="https://www.mysql.com/" target="_blank">
-                <div><Icon icon={mysqlIcon} /></div>
+                <div><Icon icon={fileTypeMysql} /></div>
                 MySQL
               </a>
             </li>
@@ -147,7 +151,7 @@ export default function TechnicalSkills() {
             <li>
               <a href="https://loader.io/" target="_blank">
                 <div><Icon icon={loaderIcon} /></div>
-                AWS EC2
+                Loader.io
               </a>
             </li>
           </ul>

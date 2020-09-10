@@ -38,27 +38,27 @@ class Portfolio extends React.Component {
     return (
       <div>
         <div className="header fontLarge">
-          02. Work
+          <span className="highlight">02.</span> Work
         </div>
         <div>
-            <ul className="portfolio-title fontMedium">
-              <li
-                className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
-                onClick={() => this.changePage("hire-mee")}>
-                  Hire-Mee
+          <ul className="portfolio-title fontMedium">
+            <li
+              className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
+              onClick={() => this.changePage("hire-mee")}>
+              Hire-Mee
               </li>
-              <li
-                className={this.state.category == 'system-design' ? 'portfolio-active' : ''}
-                onClick={() => this.changePage("system-design")}>
-                  System Design
+            <li
+              className={this.state.category == 'system-design' ? 'portfolio-active' : ''}
+              onClick={() => this.changePage("system-design")}>
+              System Design
               </li>
-              <li
-                className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
-                onClick={() => this.changePage("ecommerce")}>
-                  E-Commerce clone
+            <li
+              className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
+              onClick={() => this.changePage("ecommerce")}>
+              E-Commerce clone
               </li>
-            </ul>
-          </div>
+          </ul>
+        </div>
         <div>
           {this.currentPage()}
         </div>

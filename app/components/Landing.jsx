@@ -7,7 +7,7 @@ export default function Landing() {
       <div className="landing-small">Hi, my name is</div>
       <div className="landing-big">Michael Siu.</div>
       <div className="landing-medium"> I am {" "}
-        <span style={{ color: 'rgb(235, 198, 104)' }}>
+        <span style={{ color: '#77eebe' }}>
           <ReactTypingEffect
             speed={20}
             eraseDelay={750}

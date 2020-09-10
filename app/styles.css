@@ -8,14 +8,15 @@
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: #003559;
   font-family: "Mulish", Arial, sans-serif;
   font-weight: 400;
+  color: snow;
 }
 
 /* GRID START */
 .Container {
-  background-color: white;
+  background-color: #003559;
 }
 
 .Main {
@@ -66,14 +67,14 @@ body {
 
 .icons a{
   list-style: none;
-  color: #888888;
+  color: #77eebe;
   text-decoration: none;
   margin-left: 0.25em;
   margin-right: 0.25em;
 }
 
 .icons a:hover{
-  color: rgb(80, 80, 80);
+  color: #4dac86;
   transition: all 0.2s ease-in-out 0s;
 }
 
@@ -89,7 +90,7 @@ body {
 }
 
 .navbar-container {
-  background-color: #333;
+  background-color: #003559;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -105,7 +106,6 @@ body {
   color: #fff;
   margin-right: 2vw;
   text-decoration-line: none;
-  border: 1px solid #333;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-radius: 4px;
@@ -137,12 +137,18 @@ body {
 }
 
 .navbar-resume {
-  color: pink;
-  border: 1px solid pink;
+  color: #77eebe;
+  border: 1px solid #77eebe;
   padding: 0.75rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   line-height: 1;
+}
+
+.navbar-resume:hover {
+  background-color: transparent;
+  /* opacity: 0.2; */
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .navlink-active {
@@ -222,19 +228,8 @@ a.navlink-li:hover {
   justify-content: center;
 }
 
-.about-title {
-  color: #a7a7a7;
-  font-weight: 400;
-}
-
-.about-header {
-  margin-top: 1.5vh;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
 
 .about-body {
-  color: #a7a7a7;
   margin-top: 2.5vh;
   text-align: left;
 }
@@ -247,7 +242,7 @@ a.navlink-li:hover {
 }
 
 .tech-cat {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid snow;
   margin-bottom: 1vh;
   text-align: center;
 }
@@ -290,7 +285,6 @@ a.navlink-li:hover {
 
 /* CONTACT START */
 .contact-main {
-  color: #a7a7a7;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,7 +360,9 @@ a.navlink-li:hover {
   transition: all 0.2s ease-in-out 0s;
 }
 /* PORTFOLIO END */
-
+.highlight {
+ color: #77eebe
+}
 /* MEDIA */
 @media screen and (max-width: 1080px) {
   /* landing */
@@ -460,10 +456,6 @@ a.navlink-li:hover {
 }
 
 @media screen and (max-width: 550px) {
-  .about-header {
-    display: flex;
-    flex-direction: column;
-  }
   .portfolio-title {
     font-size: .8em;
     margin-left: 10vw;
