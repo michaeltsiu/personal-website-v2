@@ -26,17 +26,11 @@ class Portfolio extends React.Component {
 
   currentPage() {
     if (this.state.category === 'ecommerce') {
-      return (<div className="portfolio-cat">
-        <Ecommerce />
-      </div>)
+      return (<Ecommerce />)
     } else if (this.state.category === 'system-design') {
-      return (<div className="portfolio-cat">
-        <SystemDesign />
-      </div>)
+      return (<SystemDesign />)
     } else if (this.state.category === 'hire-mee') {
-      return (<div className="portfolio-cat">
-        <HireMee />
-      </div>)
+      return (<HireMee />)
     }
   }
 

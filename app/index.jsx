@@ -3,11 +3,12 @@ import './styles.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
-
-import Home from './components/Home.jsx';
+import Landing from './components/Landing.jsx';
+import About from './components/About.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Resume from './components/Resume.jsx';
 import TechnicalSkills from './components/TechnicalSkills.jsx';
@@ -33,12 +34,23 @@ class App extends React.Component {
         <div className="Container">
           <Navbar />
           <div className="Main">
-            <div><Burger /></div>
-            <div><Home /></div>
-            <div><Portfolio /></div>
-            <div><Resume /></div>
-            <div><TechnicalSkills /></div>
-            <div><Contact /></div>
+            <Burger />
+            <Landing />
+            <Fade bottom>
+              <About />
+            </Fade>
+            <Fade bottom>
+              <Portfolio />
+            </Fade>
+            <Fade bottom>
+              <Resume />
+            </Fade>
+            <Fade bottom>
+              <TechnicalSkills />
+            </Fade>
+            <Fade bottom>
+              <Contact />
+            </Fade>
           </div>
         </div>
       </React.Fragment>
