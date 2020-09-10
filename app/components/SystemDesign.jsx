@@ -3,11 +3,8 @@ import { FaGithub } from 'react-icons/fa';
 
 export default function SystemDesign() {
   return (
-    <div className="portfolio-main">
-
-      <div className="portfolio-video">
-        <img src="/app/assets/Portfolio/System-Design/System-Design_Overview.png" alt="IMAGE NOT FOUND" />
-      </div>
+    <div className="portfolio-body">
+        <img className="portfolio-img" src="/app/assets/Portfolio/System-Design/System-Design_Overview.png" alt="IMAGE NOT FOUND" />
 
       <div className="portfolio-tech fontSmall">
         <div>

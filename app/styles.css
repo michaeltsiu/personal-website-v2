@@ -27,7 +27,8 @@ body {
   margin: 0 auto;
 }
 
-.Main div {
+.Content {
+  margin-bottom: 5vw;
 
 }
 /* GRID END */
@@ -41,7 +42,7 @@ body {
 }
 
 .fontSmall {
-  font-size: .8em;
+  font-size: 1.15em;
 }
 
 .fontMedium {
@@ -100,15 +101,23 @@ body {
   margin: 0.7em 0;
   padding: 0;
   list-style: none;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #fff;
   margin-right: 2vw;
+  text-decoration-line: none;
+  border: 1px solid #333;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-radius: 4px;
 }
 
 .navbar-list {
   display: flex;
   float: right;
   color: white;
+  justify-content: center;
+  text-align: center;
+  padding: 1px 3px;
 }
 
 .navbar-profile {
@@ -125,6 +134,15 @@ body {
   color: black;
   font-weight: 400;
   font-style: italic;
+}
+
+.navbar-resume {
+  color: pink;
+  border: 1px solid pink;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  line-height: 1;
 }
 
 .navlink-active {
@@ -159,19 +177,23 @@ a.navlink-li:hover {
 .landing-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
   height: 100vh;
+  justify-content: center;
+  margin-left: 30vw;
   text-align: left;
-
 }
 
 .landing-small {
-  font-size: 1em;
+  font-size: 2.25em;
+}
+
+.landing-medium {
+  font-size: 3em;
+  font-weight: 600;
 }
 
 .landing-big {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
 }
 /* LANDING END */
@@ -185,7 +207,7 @@ a.navlink-li:hover {
 .about-picture {
   background-image: url("./assets/ProfilePicture.JPG");
   background-size: cover;
-  border-radius: 50%;
+  border-radius: 90%;
   display: inline-block;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -296,34 +318,20 @@ a.navlink-li:hover {
 
 .portfolio-body {
   margin-top: 2.5vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  opacity: 1;
 }
 
 .portfolio-cat {
-  /* margin: 3vh 2vw 2vh 2vw; */
-}
-
-.portfolio-main {
-  margin-top: 1vh;
+  margin: 3vh 2vw 2vh 2vw;
 }
 
 .portfolio-video {
-  display: table;
-  text-align: center;
+  width: 35vw;
+  height: auto;
 }
 
-.portfolio-video video {
-  width: 50vw;
+.portfolio-img {
+  width: 26vw;
   height: auto;
-  max-width: 75vw;
-}
-
-.portfolio-video img {
-  width: 150%;
-  height: auto;
-  max-width: 75vw;
 }
 
 .portfolio-tech {
@@ -361,6 +369,20 @@ a.navlink-li:hover {
 
 /* MEDIA */
 @media screen and (max-width: 1080px) {
+  /* landing */
+  .landing-small {
+    font-size: 1em;
+  }
+
+  .landing-medium {
+    font-size: 1.75em;
+    font-weight: 600;
+  }
+
+  .landing-big {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
   /* about */
   .about-text {
     width: 50vw;
@@ -375,12 +397,12 @@ a.navlink-li:hover {
     border: none;
     box-shadow: none;
   }
-  .portfolio-video video {
+  .portfolio-video {
     width: 90%;
     height: auto;
     max-width: 90vw;
   }
-  .portfolio-video img {
+  .portfolio-img {
     width: 65%;
     height: auto;
     max-width: 70vw;
@@ -397,12 +419,12 @@ a.navlink-li:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .navbar-container {
-    display: none;
-  }
-
   .navbar-burger {
     display: flex;
+  }
+
+  .navbar-container {
+    display: none;
   }
 
   .navbar-list {

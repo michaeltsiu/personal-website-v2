@@ -26,20 +26,20 @@ export default class Navbar extends React.Component {
       <div className="navbar-container">
         <div className="navbar-list">
           <div className="navbar-item fontSmall">
-                Home
+            01. About
           </div>
           <div className="navbar-item fontSmall">
-                Portfolio
+            02. Work
           </div>
           <div className="navbar-item fontSmall">
-                Resume
+            03. Technical Skills
           </div>
           <div className="navbar-item fontSmall">
-                Technical Skills
+            04. Contact
           </div>
-          <div className="navbar-item fontSmall">
-                Contact
-          </div>
+          <a className="navbar-item fontSmall navbar-resume" target="_blank" href="./app/assets/Resume.pdf">
+            Resume
+          </a>
         </div>
       </div>
     )

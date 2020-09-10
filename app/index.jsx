@@ -10,14 +10,12 @@ import Loading from './components/Loading.jsx';
 import Landing from './components/Landing.jsx';
 import About from './components/About.jsx';
 import Portfolio from './components/Portfolio.jsx';
-import Resume from './components/Resume.jsx';
 import TechnicalSkills from './components/TechnicalSkills.jsx';
 import Contact from './components/Contact.jsx';
 import Burger from './components/Burger.jsx';
 
 // const Home = React.lazy(() => import('./components/Home.jsx'));
 // const Portfolio = React.lazy(() => import('./components/Portfolio.jsx'));
-// const Resume = React.lazy(() => import('./components/Resume.jsx'));
 // const TechnicalSkills = React.lazy(() => import('./components/TechnicalSkills.jsx'));
 // const Contact = React.lazy(() => import('./components/Contact.jsx'));
 
@@ -33,24 +31,29 @@ class App extends React.Component {
       <React.Fragment>
         <div className="Container">
           <Navbar />
+          <Landing />
           <div className="Main">
             <Burger />
-            <Landing />
-            <Fade bottom>
-              <About />
-            </Fade>
-            <Fade bottom>
-              <Portfolio />
-            </Fade>
-            <Fade bottom>
-              <Resume />
-            </Fade>
-            <Fade bottom>
-              <TechnicalSkills />
-            </Fade>
-            <Fade bottom>
-              <Contact />
-            </Fade>
+            <div className="Content">
+              <Fade bottom>
+                <About />
+              </Fade>
+            </div>
+            <div className="Content">
+              <Fade bottom>
+                <Portfolio />
+              </Fade>
+            </div>
+            <div className="Content">
+              <Fade bottom>
+                <TechnicalSkills />
+              </Fade>
+            </div>
+            <div className="Content">
+              <Fade bottom>
+                <Contact />
+              </Fade>
+            </div>
           </div>
         </div>
       </React.Fragment>

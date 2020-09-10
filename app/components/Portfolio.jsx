@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
     return (
       <div>
         <div className="header fontLarge">
-          <span>Portfolio</span>
+          02. Work
         </div>
         <div>
             <ul className="portfolio-title fontMedium">
@@ -60,9 +60,7 @@ class Portfolio extends React.Component {
             </ul>
           </div>
         <div>
-          <div className="portfolio-body">
-            {this.currentPage()}
-          </div>
+          {this.currentPage()}
         </div>
       </div>
     )

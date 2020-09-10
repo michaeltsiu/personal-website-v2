@@ -9,11 +9,12 @@ const activeStyle = {
 export default function Contact () {
   return (
     <div>
-      <div className="header fontLarge">Contact</div>
+      <div className="header fontLarge">04. Contact</div>
       <div className="contact-main fontSmall">
         <div>Feel free to get in touch by clicking any of the icons below:</div>
         <div>
-          <div className="icons">
+        </div>
+        <div className="icons">
             <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
               <FaLinkedin className="fontSmall" />
             </a>
@@ -30,7 +31,6 @@ export default function Contact () {
               <FaEnvelope className="fontSmall"/>
             </a>
           </div>
-        </div>
       </div>
     </div>
   )
