@@ -7,6 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
+import Sidebars from './components/Sidebars.jsx';
 import Landing from './components/Landing.jsx';
 import About from './components/About.jsx';
 import Portfolio from './components/Portfolio.jsx';
@@ -32,6 +33,7 @@ class App extends React.Component {
         <div className="Container">
           <Navbar />
           <Landing />
+          <Sidebars />
           <div className="Main">
             <Burger />
             <div className="Content">

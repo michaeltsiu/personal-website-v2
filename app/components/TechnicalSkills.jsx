@@ -26,7 +26,7 @@ import loaderIcon from '@iconify/icons-logos/loader';
 
 export default function TechnicalSkills() {
   return (
-    <div>
+    <div id="tech">
       <div className="header fontLarge">
         <span className="highlight">03.</span> Technical Skills
       </div>

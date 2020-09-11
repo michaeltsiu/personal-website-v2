@@ -29,7 +29,7 @@ body {
 }
 
 .Content {
-  margin-bottom: 5vw;
+  margin-bottom: 10vw;
 
 }
 /* GRID END */
@@ -61,21 +61,69 @@ body {
   text-align: center;
 }
 
-.icons {
+.leftbar {
   margin-top: 5vh;
+  margin-left: 2vw;
+  left: 0;
+  bottom: 0;
+  position: fixed;
 }
 
-.icons a{
-  list-style: none;
-  color: #77eebe;
+.leftbar a {
+  display: flex;
+  flex-direction: column;
+  color: snow;
+  writing-mode: vertical-lr;
   text-decoration: none;
-  margin-left: 0.25em;
-  margin-right: 0.25em;
+  padding: 10px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  transform: rotate(180deg);
 }
 
-.icons a:hover{
-  color: #4dac86;
-  transition: all 0.2s ease-in-out 0s;
+.leftbar a:hover{
+  color: #77eebe;
+  margin-bottom: 0.5vh;
+}
+
+.leftbar:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: snow;
+}
+
+.rightbar {
+  margin-right: 2vw;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  overflow: hidden;
+}
+
+.rightbar a{
+  display: flex;
+  flex-direction: column;
+  color: snow;
+  padding: 10px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.rightbar a:hover{
+  color: #77eebe;
+  /* margin-bottom: 0.5vh; */
+  padding-bottom: 15px;
+  /* top: 15px; */
+}
+
+.rightbar:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: snow;
 }
 
 .signature {
@@ -91,6 +139,7 @@ body {
 
 .navbar-container {
   background-color: #003559;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -10px;
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -98,11 +147,17 @@ body {
   z-index: 99;
 }
 
+.navbar-container img {
+
+  width: 50px;
+  height: 50px;
+  margin-left: 2vw;
+}
+
 .navbar-item {
   margin: 0.7em 0;
   padding: 0;
   list-style: none;
-  /* font-weight: 600; */
   color: #fff;
   margin-right: 2vw;
   text-decoration-line: none;
@@ -112,9 +167,9 @@ body {
 }
 
 .navbar-list {
+  color: white;
   display: flex;
   float: right;
-  color: white;
   justify-content: center;
   text-align: center;
   padding: 1px 3px;
@@ -143,12 +198,12 @@ body {
   border-radius: 4px;
   cursor: pointer;
   line-height: 1;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  text-decoration: none;
 }
 
 .navbar-resume:hover {
-  background-color: transparent;
-  /* opacity: 0.2; */
-  transition: all 0.3s ease-in-out 0s;
+  background-color: rgba(119, 238, 190, 0.1)
 }
 
 .navlink-active {
@@ -180,6 +235,13 @@ a.navlink-li:hover {
 /* NAVBAR END */
 
 /* LANDING START */
+.landing-arrow {
+  font-size: 3em;
+  display: flex;
+  margin-left: 20vw;
+  flex-direction: center;
+}
+
 .landing-main {
   display: flex;
   flex-direction: column;
@@ -295,7 +357,7 @@ a.navlink-li:hover {
 
 /* PORTFOLIO START */
 .portfolio-active {
-  border-bottom: .15em solid black !important;
+  border-bottom: .15em solid #77eebe !important;
 }
 
 .portfolio-title {
@@ -305,8 +367,8 @@ a.navlink-li:hover {
 }
 
 .portfolio-title li:hover {
-  border-bottom: .15em solid black !important;
-  transition: all 0.2s ease-in-out 0s;
+  border-bottom: .15em solid #77eebe !important;
+  transition: all 0.1s ease-in-out 0s;
   cursor: pointer;
 }
 
@@ -344,9 +406,6 @@ a.navlink-li:hover {
 
 .portfolio-summary {
   margin-top: 4vh;
-  color: #a7a7a7;
-  margin-left: 2vw;
-  margin-right: 2vw;
   text-align-last: left;
 }
 
@@ -361,7 +420,8 @@ a.navlink-li:hover {
 }
 /* PORTFOLIO END */
 .highlight {
- color: #77eebe
+ color: #77eebe;
+ text-decoration: none;
 }
 /* MEDIA */
 @media screen and (max-width: 1080px) {

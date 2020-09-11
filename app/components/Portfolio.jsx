@@ -4,10 +4,6 @@ import Ecommerce from './Ecommerce.jsx';
 import SystemDesign from './SystemDesign.jsx';
 import HireMee from './HireMee.jsx';
 
-const activeStyle = {
-  color: 'black'
-}
-
 class Portfolio extends React.Component {
   constructor(props) {
     super(props)
@@ -36,7 +32,7 @@ class Portfolio extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="work">
         <div className="header fontLarge">
           <span className="highlight">02.</span> Work
         </div>
@@ -45,17 +41,17 @@ class Portfolio extends React.Component {
             <li
               className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
               onClick={() => this.changePage("hire-mee")}>
-              Hire-Mee
+              01. Hire-Mee
               </li>
             <li
               className={this.state.category == 'system-design' ? 'portfolio-active' : ''}
               onClick={() => this.changePage("system-design")}>
-              System Design
+              02. System Design
               </li>
             <li
               className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
               onClick={() => this.changePage("ecommerce")}>
-              E-Commerce clone
+              03. E-Commerce clone
               </li>
           </ul>
         </div>

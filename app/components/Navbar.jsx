@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaAngellist } from 'react-icons/fa';
 
@@ -10,36 +11,56 @@ export default class Navbar extends React.Component {
     this.state = {
 
     }
-    this.handleClick = this.handleClick.bind(this);
-    // onClick={this.handleClick}
-  }
-
-  handleClick() {
-    ref.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
   }
 
   render() {
     return (
       <div className="navbar-container">
+        <img src="/app/assets/Logo.png"></img>
         <div className="navbar-list">
-          <div className="navbar-item fontSmall">
+          <Link
+            className="navbar-item fontSmall"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <span className="highlight">01.</span> About
-          </div>
-          <div className="navbar-item fontSmall">
+          </Link>
+          <Link
+            className="navbar-item fontSmall"
+            to="work"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <span className="highlight">02.</span> Work
-          </div>
-          <div className="navbar-item fontSmall">
+          </Link>
+          <Link
+            className="navbar-item fontSmall"
+            to="tech"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <span className="highlight">03.</span> Technical Skills
-          </div>
-          <div className="navbar-item fontSmall">
+          </Link>
+          <Link
+            className="navbar-item fontSmall"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
             <span className="highlight">04.</span> Contact
-          </div>
-          <a className="navbar-item fontSmall navbar-resume" target="_blank" href="./app/assets/Resume.pdf">
-            Resume
-          </a>
+          </Link>
+            <a className="fontSmall highlight navbar-item navbar-resume" target="_blank" href="./app/assets/Resume.pdf">
+              Resume
+            </a>
         </div>
       </div>
     )
