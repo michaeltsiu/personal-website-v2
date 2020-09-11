@@ -3,6 +3,7 @@ import './styles.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
 import Navbar from './components/Navbar.jsx';
@@ -55,6 +56,17 @@ class App extends React.Component {
               <Fade bottom>
                 <Contact />
               </Fade>
+            </div>
+            <div className="bottomLink">
+              <Link
+              className=""
+              to="top"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            > GO TO THE TOP
+              </Link>
             </div>
           </div>
         </div>

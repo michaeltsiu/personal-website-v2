@@ -29,12 +29,16 @@ body {
 }
 
 .Content {
-  margin-bottom: 10vw;
+  margin-bottom: 15vw;
 
 }
 /* GRID END */
 
 /* ETC START */
+.bottomLink {
+  cursor: pointer;
+  margin-bottom: 2vh;
+}
 .error {
   display: flex;
   justify-content: center;
@@ -53,6 +57,11 @@ body {
 .fontLarge {
   font-size: 1.5em;
 }
+
+.highlight {
+  color: #77eebe;
+  text-decoration: none;
+ }
 
 .header {
   height: 10vh;
@@ -130,6 +139,7 @@ body {
   font-family: "Herr Von Muellerhoff", Arial, sans-serif;;
   margin-top: 3vh;
 }
+
 /* ETC END */
 
 /* NAVBAR START */
@@ -164,6 +174,12 @@ body {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  color: #77eebe;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
 .navbar-list {
@@ -173,6 +189,10 @@ body {
   justify-content: center;
   text-align: center;
   padding: 1px 3px;
+}
+
+.navbar-list > .active {
+  color: #77eebe;
 }
 
 .navbar-profile {
@@ -410,19 +430,15 @@ a.navlink-li:hover {
 }
 
 .portfolio-icon a{
-  color: #888888;
   margin-left: 2vw;
 }
 
 .portfolio-icon a:hover{
-  color: rgb(80, 80, 80);
+  color: #77eebe;
   transition: all 0.2s ease-in-out 0s;
 }
 /* PORTFOLIO END */
-.highlight {
- color: #77eebe;
- text-decoration: none;
-}
+
 /* MEDIA */
 @media screen and (max-width: 1080px) {
   /* landing */

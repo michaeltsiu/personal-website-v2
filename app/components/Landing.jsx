@@ -21,7 +21,7 @@ export default class Landing extends React.Component {
   }
   render() {
     return (
-      <div className="landing-main">
+      <div className="landing-main" id='top'>
         <div className="landing-small">Hi, my name is</div>
         <div className="landing-big">Michael Siu.</div>
         <div className="landing-medium"> I am {" "}
