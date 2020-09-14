@@ -59,13 +59,11 @@ class App extends React.Component {
             </div>
             <div className="bottomLink">
               <Link
-              className=""
-              to="top"
+              to="landing"
               spy={true}
               smooth={true}
-              offset={-70}
               duration={500}
-            > GO TO THE TOP
+            > SCROLL TO THE TOP
               </Link>
             </div>
           </div>

@@ -16,7 +16,16 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar-container">
-        <img src="/app/assets/Logo.png"></img>
+        <Link
+          className="navbar-logo"
+          to="landing"
+          spy={true}
+          smooth={true}
+          offset={-500}
+          duration={500}
+        >
+          <img src="/app/assets/Logo.png"></img>
+        </Link>
         <div className="navbar-list">
           <Link
             className="navbar-item fontSmall"
