@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
-import { FaGithub, FaLinkedin, FaInstagram, FaAngellist } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaAngellist, FaEnvelope } from 'react-icons/fa';
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
 import Sidebars from './components/Sidebars.jsx';
@@ -54,7 +54,7 @@ export default function App() {
               > SCROLL TO THE TOP
               </Link>
             </Fade>
-            <br/>
+            <br />
             <Fade bottom delay={200}>
               <div className="bottombar">
                 <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
@@ -65,6 +65,9 @@ export default function App() {
                 </a>
                 <a href='https://github.com/michaeltsiu' target="_blank">
                   <FaGithub className="fontSmall" />
+                </a>
+                <a href='mailto:michaeltsiu13@gmail.com'>
+                  <FaEnvelope className="fontSmall" />
                 </a>
                 <a href='https://www.instagram.com/michaeltsiu/' target="_blank">
                   <FaInstagram className="fontSmall" />
