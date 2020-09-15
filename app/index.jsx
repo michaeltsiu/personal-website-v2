@@ -20,44 +20,29 @@ import Burger from './components/Burger.jsx';
 // const Portfolio = React.lazy(() => import('./components/Portfolio.jsx'));
 // const TechnicalSkills = React.lazy(() => import('./components/TechnicalSkills.jsx'));
 // const Contact = React.lazy(() => import('./components/Contact.jsx'));
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
-  }
-
-  render() {
-    return (
-      <React.Fragment>
-        <div className="Container">
-          <Navbar />
-          <Landing />
-          <Sidebars />
-          <div className="Main">
-            <Burger />
-            <div className="Content">
-              <Fade bottom>
-                <About />
-              </Fade>
-            </div>
-            <div className="Content">
-              <Fade bottom>
-                <Portfolio />
-              </Fade>
-            </div>
-            <div className="Content">
-              <Fade bottom>
-                <TechnicalSkills />
-              </Fade>
-            </div>
-            <div className="Content">
-              <Fade bottom>
-                <Contact />
-              </Fade>
-            </div>
-            <div className="bottomLink">
+export default function App() {
+  return (
+    <React.Fragment>
+      <div className="Container">
+        <Navbar />
+        <Landing />
+        <Sidebars />
+        <div className="Main">
+          <Burger />
+          <div className="Content">
+              <About />
+          </div>
+          <div className="Content">
+              <Portfolio />
+          </div>
+          <div className="Content">
+              <TechnicalSkills />
+          </div>
+          <div className="Content">
+              <Contact />
+          </div>
+          <div className="bottomLink">
+            <Fade delay={500}>
               <Link
               to="landing"
               spy={true}
@@ -65,12 +50,12 @@ class App extends React.Component {
               duration={500}
             > SCROLL TO THE TOP
               </Link>
-            </div>
+            </Fade>
           </div>
         </div>
-      </React.Fragment>
-    )
-  }
+      </div>
+    </React.Fragment>
+  )
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));

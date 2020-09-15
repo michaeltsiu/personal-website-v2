@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 import Ecommerce from './Ecommerce.jsx';
 import SystemDesign from './SystemDesign.jsx';
@@ -33,30 +34,40 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div id="work">
-        <div className="header fontLarge">
-          <span className="highlight">02.</span> Work
-        </div>
+        <Fade delay={250}>
+          <div className="header fontLarge">
+            <span className="highlight">02.</span> Work
+          </div>
+        </Fade>
         <div>
           <ul className="portfolio-title fontMedium">
-            <li
-              className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
-              onClick={() => this.changePage("hire-mee")}>
-              01. Hire-Mee
+            <Fade delay={350}>
+              <li
+                className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
+                onClick={() => this.changePage("hire-mee")}>
+                01. Hire-Mee
               </li>
-            <li
-              className={this.state.category == 'system-design' ? 'portfolio-active' : ''}
-              onClick={() => this.changePage("system-design")}>
-              02. System Design
+            </Fade>
+            <Fade delay={450}>
+              <li
+                className={this.state.category == 'system-design' ? 'portfolio-active' : ''}
+                onClick={() => this.changePage("system-design")}>
+                02. System Design
               </li>
-            <li
-              className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
-              onClick={() => this.changePage("ecommerce")}>
-              03. E-Commerce clone
+            </Fade>
+            <Fade delay={550}>
+              <li
+                className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
+                onClick={() => this.changePage("ecommerce")}>
+                03. E-Commerce clone
               </li>
+            </Fade>
           </ul>
         </div>
         <div>
-          {this.currentPage()}
+          <Fade delay={650}>
+            {this.currentPage()}
+          </Fade>
         </div>
       </div>
     )

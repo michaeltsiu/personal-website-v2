@@ -31,7 +31,7 @@ body {
 }
 
 .Content {
-  margin-bottom: 15vw;
+  margin-bottom: 10vw;
 }
 /* GRID END */
 
@@ -44,6 +44,12 @@ body {
 .bottomLink:hover {
   color: #77eebe;
   /* margin-bottom: 10vh; */
+}
+
+.react-reveal {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .error {
@@ -71,15 +77,15 @@ body {
  }
 
 
- /* BEFORE
+ /* BEFORE */
  .header {
   height: 10vh;
   letter-spacing: 1px;
   font-weight: 700;
   text-align: center;
- } */
+ }
 
-.header {
+/* .header {
   display: flex;
   height: 10vh;
   letter-spacing: 1px;
@@ -100,7 +106,7 @@ body {
   height: 1px;
   margin-left: 20px;
   background-color: snow;
-}
+} */
 
 .leftbar {
   margin-top: 5vh;
@@ -186,15 +192,22 @@ body {
   top: 0;
   width: 100vw;
   z-index: 99;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbar-container img {
   width: 50px;
   height: 50px;
   margin-left: 2vw;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .navbar-item {
+  display: flex;
   margin: 0.7em 0;
   padding: 0;
   list-style: none;
