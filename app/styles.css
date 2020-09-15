@@ -70,11 +70,36 @@ body {
   text-decoration: none;
  }
 
-.header {
+
+ /* BEFORE
+ .header {
   height: 10vh;
-  padding: 2.5vh;
+  letter-spacing: 1px;
   font-weight: 700;
   text-align: center;
+ } */
+
+.header {
+  display: flex;
+  height: 10vh;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header span {
+  margin-right: 10px;
+}
+
+.header:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 15px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: snow;
 }
 
 .leftbar {

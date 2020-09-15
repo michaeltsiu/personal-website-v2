@@ -5,7 +5,7 @@ export default function About() {
     <div className="about-main" id="about">
       <div className="about-text">
         <div className="header fontLarge">
-          <span className="highlight">01.</span> About Me
+          <span className="highlight">01.</span>About Me
         </div>
         <span className="about-picture"></span>
         <br />
