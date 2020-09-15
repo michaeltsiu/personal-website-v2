@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 
+import { FaGithub, FaLinkedin, FaInstagram, FaAngellist } from 'react-icons/fa';
 import Navbar from './components/Navbar.jsx';
 import Loading from './components/Loading.jsx';
 import Sidebars from './components/Sidebars.jsx';
@@ -28,28 +29,47 @@ export default function App() {
         <Landing />
         <Sidebars />
         <div className="Main">
-          <Burger />
           <div className="Content">
-              <About />
+            <Burger />
           </div>
           <div className="Content">
-              <Portfolio />
+            <About />
           </div>
           <div className="Content">
-              <TechnicalSkills />
+            <Portfolio />
           </div>
           <div className="Content">
-              <Contact />
+            <TechnicalSkills />
+          </div>
+          <div className="Content">
+            <Contact />
           </div>
           <div className="bottomLink">
             <Fade delay={500}>
               <Link
-              to="landing"
-              spy={true}
-              smooth={true}
-              duration={500}
-            > SCROLL TO THE TOP
+                to="landing"
+                spy={true}
+                smooth={true}
+                duration={500}
+              > SCROLL TO THE TOP
               </Link>
+            </Fade>
+            <br/>
+            <Fade bottom delay={200}>
+              <div className="bottombar">
+                <a href='https://www.linkedin.com/in/michaeltsiu/' target="_blank">
+                  <FaLinkedin className="fontSmall" />
+                </a>
+                <a href='https://angel.co/u/michaeltsiu' target="_blank">
+                  <FaAngellist className="fontSmall" />
+                </a>
+                <a href='https://github.com/michaeltsiu' target="_blank">
+                  <FaGithub className="fontSmall" />
+                </a>
+                <a href='https://www.instagram.com/michaeltsiu/' target="_blank">
+                  <FaInstagram className="fontSmall" />
+                </a>
+              </div>
             </Fade>
           </div>
         </div>

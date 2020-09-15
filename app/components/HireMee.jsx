@@ -19,7 +19,7 @@ export default function HireMee() {
 
       <div className="portfolio-summary fontSmall">
         A web application that provides an organized space for job seekers to input information about submitted job applications.
-        </div>
+      </div>
 
     </div>
   )

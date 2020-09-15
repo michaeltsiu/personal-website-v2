@@ -16,7 +16,7 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#77eebe' : 'snow'};
+    background-color: ${({ open }) => open ? 'snow' : '#77eebe'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.25s linear;
@@ -67,8 +67,9 @@ const Burger = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-50}
             duration={500}
+            onClick={() => setOpen(!open)}
           >
             <span className="highlight">01.</span> About
           </Link>
@@ -77,8 +78,9 @@ const Burger = () => {
             to="work"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-50}
             duration={500}
+            onClick={() => setOpen(!open)}
           >
             <span className="highlight">02.</span> Work
           </Link>
@@ -87,8 +89,9 @@ const Burger = () => {
             to="tech"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-50}
             duration={500}
+            onClick={() => setOpen(!open)}
           >
             <span className="highlight">03.</span> Technical Skills
           </Link>
@@ -97,8 +100,9 @@ const Burger = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-50}
             duration={500}
+            onClick={() => setOpen(!open)}
           >
             <span className="highlight">04.</span> Contact
           </Link>
