@@ -4,7 +4,9 @@ import { FaGithub } from 'react-icons/fa';
 export default function Ecommerce() {
   return (
     <div className="portfolio-body">
-      <video className="portfolio-video" src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/Ecommerce-Overview.mp4" alt="VID NOT FOUND" loop="loop" autoPlay="autoplay" muted="muted"/>
+      <video className="portfolio-video" alt="VID NOT FOUND" loop="loop" autoPlay="autoplay" muted="muted">
+        <source src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/Ecommerce-Overview.mp4"></source>
+      </video>
       <div className="portfolio-tech fontSmall">
         <div>
           <a href="https://reactjs.org/" target="_blank">React</a> | <a href="https://expressjs.com/" target="_blank">Express</a> | <a href="https://www.mysql.com/" target="_blank">MySQL</a> | <a href="https://nodejs.org/" target="_blank">Node.JS</a> | <a

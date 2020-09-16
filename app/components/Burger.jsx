@@ -106,7 +106,7 @@ const Burger = () => {
           >
             <span className="highlight">04.</span> Contact
           </Link>
-            <a className="fontSmall highlight navbar-item navbar-resume" target="_blank" href="./app/assets/Resume.pdf">
+            <a className="fontSmall highlight navbar-item navbar-resume" target="_blank" href="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/Resume.pdf">
               Resume
             </a>
         </div>

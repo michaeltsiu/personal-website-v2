@@ -11,7 +11,7 @@ export default function Contact () {
       </Fade>
       <Fade delay={350}>
         <div className="contact-main fontSmall">
-          <div>Feel free to get in touch whether you have a question or just want to say hi and I will try to get back to you as soon as I can!</div>
+          <div>Feel free to get in touch whether you have a question or just want to say hi, and I will get back to you as soon as I can!</div>
         </div>
         <div>
         <br/><br/>
