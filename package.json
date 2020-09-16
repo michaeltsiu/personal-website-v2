@@ -4,8 +4,8 @@
   "description": "Michael Siu's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --entry ./app/index.jsx --output ./app/bundle.js -p"
+    "start": "webpack-dev-server --mode=development",
+    "build": "NODE_ENV='production' webpack"
   },
   "babel": {
     "presets": [
