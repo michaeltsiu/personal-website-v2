@@ -34,28 +34,28 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div id="work">
-        <Fade delay={250}>
+        <Fade delay={200}>
           <div className="header fontLarge">
             <span className="highlight">02.</span> Work
           </div>
         </Fade>
         <div>
           <ul className="portfolio-title fontMedium">
-            <Fade delay={350}>
+            <Fade delay={250}>
               <li
                 className={this.state.category == 'hire-mee' ? 'portfolio-active' : ''}
                 onClick={() => this.changePage("hire-mee")}>
                 01. Hire-Mee
               </li>
             </Fade>
-            <Fade delay={450}>
+            <Fade delay={300}>
               <li
                 className={this.state.category == 'system-design' ? 'portfolio-active' : ''}
                 onClick={() => this.changePage("system-design")}>
                 02. System Design
               </li>
             </Fade>
-            <Fade delay={550}>
+            <Fade delay={350}>
               <li
                 className={this.state.category == 'ecommerce' ? 'portfolio-active' : ''}
                 onClick={() => this.changePage("ecommerce")}>
@@ -65,7 +65,7 @@ class Portfolio extends React.Component {
           </ul>
         </div>
         <div>
-          <Fade delay={650}>
+          <Fade delay={400}>
             {this.currentPage()}
           </Fade>
         </div>

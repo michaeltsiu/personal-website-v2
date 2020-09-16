@@ -28,14 +28,14 @@ import loaderIcon from '@iconify/icons-logos/loader';
 export default function TechnicalSkills() {
   return (
     <div id="tech">
-      <Fade delay={250}>
+      <Fade delay={200}>
         <div className="header fontLarge">
           <span className="highlight">03.</span> Technical Skills
         </div>
       </Fade>
       <div className="tech-list">
         <div>
-          <Fade delay={350}>
+          <Fade delay={250}>
             <h1 className="tech-cat fontMedium">Front-End</h1>
             <ul className="tech-item fontSmall">
               <li>
@@ -79,7 +79,7 @@ export default function TechnicalSkills() {
 
         </div>
         <div>
-          <Fade delay={450}>
+          <Fade delay={300}>
             <h1 className="tech-cat fontMedium">Back-End</h1>
             <ul className="tech-item fontSmall">
               <li>
@@ -123,7 +123,7 @@ export default function TechnicalSkills() {
 
         </div>
         <div>
-          <Fade delay={550}>
+          <Fade delay={350}>
             <h1 className="tech-cat fontMedium">Others</h1>
             <ul className="tech-item fontSmall">
               <li>
