@@ -2,3 +2,4 @@ package-lock.json
 node_modules
 # Local Netlify folder
 .netlify
+/app/dist/bundle.js
