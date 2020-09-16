@@ -17,10 +17,12 @@ import TechnicalSkills from './components/TechnicalSkills.jsx';
 import Contact from './components/Contact.jsx';
 import Burger from './components/Burger.jsx';
 
-// const Home = React.lazy(() => import('./components/Home.jsx'));
+// const About = React.lazy(() => import('./components/About.jsx'));
 // const Portfolio = React.lazy(() => import('./components/Portfolio.jsx'));
 // const TechnicalSkills = React.lazy(() => import('./components/TechnicalSkills.jsx'));
 // const Contact = React.lazy(() => import('./components/Contact.jsx'));
+// const Burger = React.lazy(() => import('./components/Burger.jsx'));
+
 export default function App() {
   return (
     <React.Fragment>
