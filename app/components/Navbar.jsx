@@ -17,7 +17,7 @@ export default function Navbar() {
         offset={-500}
         duration={500}
       >
-        <img src="/app/assets/Logo.png"></img>
+        <span className="navbar-logo"></span>
       </Link>
       <div className="navbar-list">
         <Fade top>
