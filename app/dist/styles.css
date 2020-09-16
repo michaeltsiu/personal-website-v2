@@ -321,7 +321,7 @@ a.navlink-li:hover {
 }
 
 .about-picture {
-  background-image: url("./assets/ProfilePicture.JPG");
+  background-image: url("../assets/ProfilePicture.JPG");
   background-size: cover;
   border-radius: 90%;
   display: inline-block;
