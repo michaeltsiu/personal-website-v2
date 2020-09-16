@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 export default function Ecommerce() {
   return (
     <div className="portfolio-body">
-      <video className="portfolio-video" src="/app/assets/Portfolio/Ecommerce/Ecommerce-Overview.mp4" alt="VIDEO NOT FOUND" loop="loop" autoPlay="autoplay" />
+      <video className="portfolio-video" src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/Ecommerce-Overview.mp4" alt="VIDEO NOT FOUND" loop="loop" autoPlay="autoplay" />
 
       <div className="portfolio-tech fontSmall">
         <div>

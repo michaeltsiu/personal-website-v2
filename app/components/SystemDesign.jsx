@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 export default function SystemDesign() {
   return (
     <div className="portfolio-body">
-        <img className="portfolio-img" src="/app/assets/Portfolio/System-Design/System-Design_Overview.png" alt="IMAGE NOT FOUND" />
+        <img className="portfolio-img" src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/System-Design_Overview.png" alt="IMAGE NOT FOUND" />
 
       <div className="portfolio-tech fontSmall">
         <div>
@@ -24,8 +24,6 @@ export default function SystemDesign() {
         <br />
         <p>Achieved by being deployed on 4 AWS EC2 t2 micro instances capable of handling 10,579 client requests per second, 0% error rate and 61ms average response time. Load balanced and cached via NGINX.</p>
       </div>
-
-
     </div>
   )
 };

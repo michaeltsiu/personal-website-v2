@@ -226,7 +226,7 @@ body {
 }
 
 .navbar-logo {
-  background-image: url("../assets/Logo.png");
+  background-image: url("https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/Logo.png");
   background-size: cover;
   margin: 10px 30px;
   cursor: pointer;
@@ -326,9 +326,9 @@ a.navlink-li:hover {
 }
 
 .about-picture {
-  background-image: url("../assets/ProfilePicture.JPG");
+  background-image: url("https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/ProfilePicture.JPG");
   background-size: cover;
-  border-radius: 90%;
+  border-radius: 50%;
   display: inline-block;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -439,6 +439,7 @@ a.navlink-li:hover {
 }
 
 .portfolio-img {
+  background-size: cover;
   width: 26vw;
   height: auto;
 }

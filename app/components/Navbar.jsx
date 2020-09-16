@@ -73,7 +73,7 @@ export default function Navbar() {
             </Link>
         </Fade>
         <Fade top delay={800}>
-          <a className="fontSmall highlight navbar-item navbar-resume" target="_blank" href="./app/assets/Resume.pdf">
+          <a className="fontSmall highlight navbar-item navbar-resume" target="_blank" href="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/Resume.pdf">
             Resume
             </a>
         </Fade>

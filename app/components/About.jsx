@@ -11,7 +11,7 @@ export default function About() {
           </div>
         </Fade>
         <Fade delay={350}>
-          <span className="about-picture"></span>
+          <img className="about-picture"></img>
           <br />
         </Fade>
         <Fade delay={450}>

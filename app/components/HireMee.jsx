@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 export default function HireMee() {
   return (
     <div className="portfolio-body">
-      <video className="portfolio-video" src="/app/assets/Portfolio/Hire-mee/Hire-mee_Overview.mp4" alt="VIDEO NOT FOUND" loop="loop" autoPlay="autoplay" />
+      <video className="portfolio-video" src="https://michael-siu-portfolio.s3-us-west-1.amazonaws.com/Hire-mee_Overview.mp4" alt="VIDEO NOT FOUND" loop="loop" autoPlay="autoplay" />
 
       <div className="portfolio-tech fontSmall">
         <div>
