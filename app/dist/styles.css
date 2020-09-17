@@ -31,6 +31,7 @@ body {
 .Content {
   margin-bottom: 10vw;
 }
+
 /* GRID END */
 
 /* ETC START */
@@ -256,7 +257,6 @@ body {
   padding: 0.75rem 1rem;
   border-radius: 4px;
   cursor: pointer;
-  line-height: 1;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
   text-decoration: none;
 }
@@ -409,12 +409,9 @@ a.navlink-li:hover {
 /* CONTACT END */
 
 /* PORTFOLIO START */
+
 .portfolio-active {
   border-bottom: .15em solid #77eebe !important;
-}
-
-.portfolio-body {
-  height: 50vh;
 }
 
 .portfolio-title {
@@ -518,6 +515,7 @@ a.navlink-li:hover {
     justify-content: center;
     margin-top: 10vh;
   }
+
   /* portfolio */
   .portfolio-body {
     border: none;
