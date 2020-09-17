@@ -413,6 +413,10 @@ a.navlink-li:hover {
   border-bottom: .15em solid #77eebe !important;
 }
 
+.portfolio-body {
+  height: 50vh;
+}
+
 .portfolio-title {
   display: flex;
   list-style: none;
